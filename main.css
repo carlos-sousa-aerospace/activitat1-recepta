@@ -51,7 +51,7 @@ table {
 /*------------------------------------------------------------------------------------------*/
 /* Start of main.css */
 body {
-  font: normal 18px/1.5 "Montserrat", helvetica, arial, sans-serif;
+  font: normal 14pt/1.5 "Montserrat", helvetica, arial, sans-serif;
   width: 1024px;
   margin: 0 auto;
 }
@@ -69,11 +69,67 @@ header {
 }
 
 header h1 {
-  font-size: 4em;
+  font-size: 54pt;
   position: absolute;
   margin: 0;
   top: 45%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+#container {
+  margin-top: 70px;
+  margin-right: 10%;
+  margin-bottom: 70px;
+  margin-left: 10%;
+}
+
+#container h2 {
+  font-size: 16pt;
+  font-weight: 500;
+  margin-bottom: 16pt;
+}
+
+#intro {
+  font-size: 16pt;
+}
+
+.section_img {
+  display: block;
+  margin-top: 45px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+#recipe_img {
+  width: 50%;
+}
+
+#cooking_img {
+  width: 40%;
+}
+
+section {
+  border-top: 2px solid gray;
+  padding-top: 50px;
+}
+
+ul>li {
+  text-indent: 10px;
+}
+
+ul>li:before {
+  content: "-";
+  margin-right: 2pt;
+}
+
+ol {
+  counter-reset: list;
+}
+
+ol>li:before {
+  content: counter(list) ")";
+  counter-increment: list;
 }
