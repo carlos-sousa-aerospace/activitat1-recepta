@@ -48,17 +48,32 @@ table {
 }
 /* End of reset */
 
+/*------------------------------------------------------------------------------------------*/
 /* Start of main.css */
 body {
-  font-family: 'Montserrat';
+  font: normal 18px/1.5 "Montserrat", helvetica, arial, sans-serif;
+  width: 1024px;
+  margin: 0 auto;
 }
 
-.apple-image {
+header {
     background-image: url("images/apple-pie.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
+    background-position: 50% 30%; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-size: 100%; /* Resize the background image to cover the entire container */
     color: white; /* text color */
-  }
+    width: inherit; /* sets the width to be equal to its parent element */
+    height: 600px; /* The browser will calculate the height of the element */
+    position: relative;
+}
+
+header h1 {
+  font-size: 4em;
+  position: absolute;
+  margin: 0;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
